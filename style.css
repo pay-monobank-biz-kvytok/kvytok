@@ -125,13 +125,23 @@ body {
 .circle {
   width: 10px;
   height: 10px;
-  border: 1px solid green;
+  border: 1.5px solid green;
   border-radius: 50%;
   position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
   background-color: transparent;
+  margin-right: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.circle::after{
+  content: '';
+  position: absolute;
+  background-color: #e1f2e7;
+  width: 3px;
+  height: 3px;
+  left:50%;
+  bottom:90%;
 }
 
 .timer {
@@ -256,17 +266,6 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
   border-radius: 15px;
 }
 
-  .circle {
-    width: 10px;
-    height: 10px;
-    border: 1.5px solid green;
-    background-color: transparent;
-    margin-right: 10px;
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
 
   .timer {
     font-size: 16px;
@@ -288,3 +287,4 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
     z-index: 1;
   }
 }
+
