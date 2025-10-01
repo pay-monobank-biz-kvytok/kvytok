@@ -139,7 +139,7 @@ body {
   position: absolute;
   background-color: #e1f2e7;
   width: 3px;
-  height: 3px;
+  height: 4px;
   left:50%;
   bottom:90%;
 }
@@ -287,4 +287,5 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
     z-index: 1;
   }
 }
+
 
