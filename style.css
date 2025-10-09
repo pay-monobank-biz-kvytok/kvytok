@@ -11,6 +11,14 @@ body {
    user-select: none;
 }
 
+.restart{
+  position: absolute;
+  min-width: 10%;
+  min-height:5%;
+  top: 1.2%;
+  right:5%;
+  z-index: 8;
+}
 .ticket-wrapper {
   position: relative;
   width: 100%;
@@ -288,6 +296,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
     z-index: 1;
   }
 }
+
 
 
 
