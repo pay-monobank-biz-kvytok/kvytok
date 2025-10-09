@@ -91,7 +91,7 @@ window.onload = function () {
     }
 
     startTimer(timeLeft, display);
-    document.getElementById('reset-div').addEventListener('dblclick', function () {
+    document.getElementById('restart').addEventListener('dblclick', function () {
     if (confirm("?")) {
         localStorage.removeItem('purchaseDate');
         localStorage.removeItem('ticketEndTime');
@@ -101,4 +101,5 @@ window.onload = function () {
 
 
 };
+
 
