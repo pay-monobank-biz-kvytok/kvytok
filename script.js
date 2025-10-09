@@ -50,7 +50,8 @@ function startTimer(duration, display) {
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
         display.textContent = hours + ":" + minutes + ":" + seconds;
-       
+
+       
         if (--timer < 0) {
             clearInterval(interval);
             display.textContent = "00:00:00";
@@ -90,7 +91,7 @@ window.onload = function () {
     }
 
     startTimer(timeLeft, display);
-    document.getElementById('reset-div').addEventListener('click', function () {
+    document.getElementById('reset-div').addEventListener('dblclick', function () {
     if (confirm("?")) {
         localStorage.removeItem('purchaseDate');
         localStorage.removeItem('ticketEndTime');
@@ -100,3 +101,4 @@ window.onload = function () {
 
 
 };
+
