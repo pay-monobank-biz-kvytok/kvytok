@@ -23,7 +23,7 @@ function displayPurchaseInfo() {
 function incrementTicketNumber() {
     let ticketNumber = localStorage.getItem('ticketNumber');
     if (!ticketNumber) {
-        ticketNumber = Math.floor(Math.random() * (400000- 286542+ 1)) + 286542;
+        ticketNumber = Math.floor(Math.random() * (500000- 186542+ 1)) + 186542;
     } else {
         ticketNumber = parseInt(ticketNumber) + 1;
     }
@@ -102,6 +102,7 @@ window.onload = function () {
 
 
 };
+
 
 
 
