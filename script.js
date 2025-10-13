@@ -93,6 +93,7 @@ window.onload = function () {
     startTimer(timeLeft, display);
     document.getElementById('restart').addEventListener('dblclick', function () {
     if (confirm("?")) {
+        localStorage.removeItem('ticketNumber');
         localStorage.removeItem('purchaseDate');
         localStorage.removeItem('ticketEndTime');
         location.reload();
@@ -101,6 +102,7 @@ window.onload = function () {
 
 
 };
+
 
 
 
