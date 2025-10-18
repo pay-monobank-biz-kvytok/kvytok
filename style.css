@@ -121,7 +121,7 @@ body {
 
 .timer-container {
   background: linear-gradient(135deg, #e1f2e7, #e0f0fc);
-  border-radius: 15px;
+  border-radius: 30px;
   padding: 15px 20px;
   margin-bottom: 40px;
   display: inline-flex;
@@ -281,6 +281,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
     z-index: 1;
   }
 }
+
 
 
 
