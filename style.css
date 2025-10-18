@@ -130,26 +130,11 @@ body {
   text-align: left;
 }
 
-.circle {
-  width: 10px;
-  height: 10px;
-  border: 1.5px solid green;
-  border-radius: 50%;
-  position: absolute;
-  background-color: transparent;
-  margin-right: 10px;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.circle::after{
-  content: '';
-  position: absolute;
-  background-color: #e1f2e7;
-  width: 3px;
-  height: 5px;
-  left:50%;
-  bottom:75%;
+#timerCircle {
+      transform: rotate(-90deg); /* Adjusts the starting position of the stroke */
+      width: 14px;
+      height: 14px;
+      margin-right:10px;
 }
 
 .timer {
@@ -296,6 +281,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
     z-index: 1;
   }
 }
+
 
 
 
