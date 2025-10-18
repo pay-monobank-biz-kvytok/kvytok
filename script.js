@@ -1,3 +1,10 @@
+function updateTimer(timer) {
+      let percent = (timer / 5400) * 100; // 5400 seconds (90 minutes)
+      const circle = document.getElementById("timerCircle");
+      const circlePath = circle.querySelectorAll('circle')[1]; // Get the second circle for the animated stroke
+      const dashoffset = (62.83 * (100 - percent)) / 100; // 62.83 is the circumference of the circle (2 * π * r, with r=10)
+      circlePath.style.strokeDashoffset = 0-dashoffset;
+}
 // Відображення дати придбання
 function displayPurchaseInfo() {
     let purchaseDate = localStorage.getItem('purchaseDate');
@@ -49,7 +56,8 @@ function startTimer(duration, display) {
         seconds = seconds < 10 ? "0" + seconds : seconds;
         display.textContent = hours + ":" + minutes + ":" + seconds;
 
-       
+
+        updateTimer(timer);
         if (--timer < 0) {
             clearInterval(interval);
             display.textContent = "00:00:00";
@@ -100,6 +108,7 @@ window.onload = function () {
 
 
 };
+
 
 
 
