@@ -60,13 +60,13 @@ body {
 
 .top-cutout {
   position: absolute;
-  top: -55px;
+  top: -57px;
   left: 50%;
   transform: translateX(-50%);
   width: 80px;
   height: 80px;
   background-color: #f5f5f5;
-  border-radius: 46.5%;
+  border-radius: 50%;
   z-index: 1;
 }
 
@@ -217,7 +217,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
   .logo {
     width: 60px;
     height: 60px;
-    top: -42.5px;
+    top: -46px;
     transform: translateX(-50%);
     left: 50%;
 	pointer-events: none;
@@ -281,6 +281,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
     z-index: 1;
   }
 }
+
 
 
 
