@@ -191,7 +191,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
   width: 100%;
   box-sizing: border-box;
   user-select:none;
-  top:100.5%;
+  top:102%;
 }
 
 
@@ -281,6 +281,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
     z-index: 1;
   }
 }
+
 
 
 
