@@ -45,7 +45,7 @@ body {
   height: 30px;
   background-color: #f5f5f5;
   border-radius: 50%;
-  top: 50.4%;
+  top: 49.7%;
   transform: translateY(-50%);
   z-index: 2;
 }
@@ -153,7 +153,7 @@ body {
 .qr-code {
   width: 280px;
   height: 250px;
-  margin-top: auto;
+  margin-top: 15px;
   margin-bottom: 0;
   display: flex;
   z-index: 2;
@@ -268,7 +268,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
 
   #waveCanvas {
     position: absolute;
-  top: 665px;
+  top: 680px;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -281,6 +281,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
     z-index: 1;
   }
 }
+
 
 
 
