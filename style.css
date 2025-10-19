@@ -90,12 +90,12 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: #333;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 10px;
 }
 
 .thin-line {
-  width: 80px;
+  width: 40%;
   height: 0.5px;
   background-color: #ccc;
   margin: 10px auto 15px auto;
@@ -111,7 +111,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   color: #000;
-  margin: 10px auto;
+  margin: 10px auto 15px auto;
 }
 
 #ticket-number {
@@ -247,7 +247,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
   }
 
   .timer-container {
-  margin: 15px auto 25px auto;
+  margin: 15px auto 30px auto;
   padding: 12px 18px;
   display: flex;
   flex-direction: row;
@@ -281,6 +281,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
     z-index: 1;
   }
 }
+
 
 
 
