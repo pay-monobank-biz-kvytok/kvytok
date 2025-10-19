@@ -44,7 +44,7 @@ body {
   width: 30px;
   height: 30px;
   background-color: #f5f5f5;
-  border-radius: 48.9%;
+  border-radius: 50%;
   top: 50.4%;
   transform: translateY(-50%);
   z-index: 2;
@@ -153,7 +153,7 @@ body {
 .qr-code {
   width: 280px;
   height: 250px;
-  margin-top: 25px;
+  margin-top: auto;
   margin-bottom: 0;
   display: flex;
   z-index: 2;
@@ -173,7 +173,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
 
 #waveCanvas {
   position: absolute;
-  top: 690px; /* Начинаем от верхней части контейнера */
+  top: 616px; /* Начинаем от верхней части контейнера */
   left: 0;
   z-index: 3; /* Волна будет поверх контейнера билета */
   pointer-events: none; /* Отключаем взаимодействие с canvas, чтобы не мешать кликам по другим элементам */
@@ -281,6 +281,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
     z-index: 1;
   }
 }
+
 
 
 
