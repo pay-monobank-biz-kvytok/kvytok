@@ -41,14 +41,14 @@ function incrementTicketNumber() {
 function startTimer(duration, display) {
     let timer = duration, hours, minutes, seconds;
     
-        if(timer != 5400){
+        timer--;
         hours = Math.floor((timer+1) / 3600);
         minutes = Math.floor(((timer+1) % 3600) / 60);
         seconds = (timer+1) % 60;
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
         display.textContent = hours + ":" + minutes + ":" + seconds;
-        }
+        
     const interval = setInterval(function () {
         hours = Math.floor(timer / 3600);
         minutes = Math.floor((timer % 3600) / 60);
@@ -107,6 +107,7 @@ window.onload = function () {
 
 
 };
+
 
 
 
