@@ -41,13 +41,14 @@ function incrementTicketNumber() {
 function startTimer(duration, display) {
     let timer = duration, hours, minutes, seconds;
     
-    hours = Math.floor(timer / 3600);
-        minutes = Math.floor((timer % 3600) / 60);
-        seconds = timer % 60;
+        if(timer != 5400){
+        hours = Math.floor((timer+1) / 3600);
+        minutes = Math.floor(((timer+1) % 3600) / 60);
+        seconds = (timer+1) % 60;
         minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = (seconds+1) < 10 ? "0" + (seconds+1) : (seconds+1);
+        seconds = seconds < 10 ? "0" + seconds : seconds;
         display.textContent = hours + ":" + minutes + ":" + seconds;
-    
+        }
     const interval = setInterval(function () {
         hours = Math.floor(timer / 3600);
         minutes = Math.floor((timer % 3600) / 60);
@@ -60,7 +61,7 @@ function startTimer(duration, display) {
         updateTimer(timer);
         if (--timer < 0) {
             clearInterval(interval);
-            display.textContent = "00:00:00";
+            display.textContent = "0:00:00";
         }
     }, 1000);
 }
@@ -106,6 +107,7 @@ window.onload = function () {
 
 
 };
+
 
 
 
