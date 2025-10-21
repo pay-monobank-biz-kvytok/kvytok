@@ -61,7 +61,6 @@ function startTimer(duration, display) {
         if (--timer < 0) {
             clearInterval(interval);
             display.textContent = "00:00:00";
-            localStorage.removeItem('ticketEndTime'); // Очистити при завершенні
         }
     }, 1000);
 }
@@ -92,7 +91,6 @@ window.onload = function () {
         timeLeft = Math.floor((endTime - now) / 1000);
         if (timeLeft <= 0) {
             timeLeft = 0;
-            localStorage.removeItem('ticketEndTime');
         }
     }
 
@@ -108,6 +106,7 @@ window.onload = function () {
 
 
 };
+
 
 
 
