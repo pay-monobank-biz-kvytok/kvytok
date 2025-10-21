@@ -46,7 +46,7 @@ function startTimer(duration, display) {
         seconds = timer % 60;
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
-        display.textContent = hours + ":" + minutes + ":" + seconds;
+        display.textContent = hours + ":" + minutes + ":" + (seconds+1);
     
     const interval = setInterval(function () {
         hours = Math.floor(timer / 3600);
@@ -106,6 +106,7 @@ window.onload = function () {
 
 
 };
+
 
 
 
