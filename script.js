@@ -56,7 +56,7 @@ function startTimer(duration, display) {
         seconds = seconds < 10 ? "0" + seconds : seconds;
         display.textContent = hours + ":" + minutes + ":" + seconds;
 
-
+          
         updateTimer(timer);
         if (--timer < 0) {
             clearInterval(interval);
@@ -93,7 +93,7 @@ window.onload = function () {
             timeLeft = 0;
         }
     }
-
+    updateTimer(timeLeft);  
     startTimer(timeLeft, display);
     document.getElementById('restart').addEventListener('dblclick', function () {
     if (confirm("?")) {
@@ -106,6 +106,7 @@ window.onload = function () {
 
 
 };
+
 
 
 
