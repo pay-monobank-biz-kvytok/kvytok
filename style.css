@@ -19,6 +19,7 @@ body {
   z-index: 7;
 }
 .ticket-wrapper {
+  margin-top:35px;
   position: relative;
   width: 100%;
   max-width: 400px;
@@ -190,7 +191,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
   width: 100%;
   box-sizing: border-box;
   user-select:none;
-  top:750px;
+  top:785px;
 }
 
 
@@ -279,6 +280,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
     z-index: 1;
   }
 }
+
 
 
 
