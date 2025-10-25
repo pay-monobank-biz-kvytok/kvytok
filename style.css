@@ -29,7 +29,7 @@ body {
   position: relative;
   background-color: white;
   border-radius: 20px;
-  padding: 20px 15px 60px 15px;
+  padding: 30px 20px 60px 20px;
   overflow: visible;
   display: flex;
   flex-direction: column;
@@ -243,7 +243,15 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
   background: linear-gradient(135deg, #e1f2e7, #e0f0fc);
   border-radius: 30px;
 }
-
+#waveCanvas {
+    position: absolute;
+  top: 680px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    pointer-events: none;
+  }
 
   .timer {
     font-size: 16px;
@@ -255,6 +263,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
     z-index: 1;
   }
 }
+
 
 
 
