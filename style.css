@@ -29,7 +29,7 @@ body {
   position: relative;
   background-color: white;
   border-radius: 20px;
-  padding: 30px 20px 60px 20px;
+  padding: 20px 15px 60px 15px;
   overflow: visible;
   display: flex;
   flex-direction: column;
@@ -96,9 +96,9 @@ body {
 
 .thin-line {
   width: 40%;
-  height: 0.5px;
   background-color: #ccc;
-  margin: 10px auto 15px auto;
+  height: 1px; 
+  margin: 30px auto 40px auto;
 }
 
 .purchase-info {
@@ -120,10 +120,10 @@ body {
 }
 
 .timer-container {
+  margin: 15px auto 30px auto;
+  padding: 12px 18px;
   background: linear-gradient(135deg, #e1f2e7, #e0f0fc);
   border-radius: 30px;
-  padding: 15px 20px;
-  margin-bottom: 40px;
   display: inline-flex;
   align-items: center;
   position: relative;
@@ -151,8 +151,8 @@ body {
 }
 
 .qr-code {
-  width: 280px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   margin-top: 15px;
   margin-bottom: 0;
   display: flex;
@@ -169,16 +169,17 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
   margin-top: auto;
   position: relative;
   z-index: 2;
+	margin-top: 30px; /* Додано для опускання футера */
 }
 
 #waveCanvas {
   position: absolute;
-  top: 616px; /* Начинаем от верхней части контейнера */
+  top: 680px; /* Начинаем от верхней части контейнера */
   left: 0;
   z-index: 3; /* Волна будет поверх контейнера билета */
   pointer-events: none; /* Отключаем взаимодействие с canvas, чтобы не мешать кликам по другим элементам */
   width: 100%; /* Сделаем ширину равной ширине контейнера */
-  height: 50px;
+  height: 55px;
 }
 
 .reopen-message {
@@ -209,11 +210,6 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
 	pointer-events: none;
   }
 
-  .thin-line {
-  height: 1px; 
-  margin: 30px auto 40px auto;
-}
-
   .logo {
     width: 60px;
     height: 60px;
@@ -235,20 +231,8 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
   .footer {
     font-size: 14px;
   }
-  
-
-  .footer {
-    margin-top: 30px; /* Додано для опускання футера */
-  }
-
-  .qr-code {
-    width: 230px;
-    height: 230px;
-  }
 
   .timer-container {
-  margin: 15px auto 30px auto;
-  padding: 12px 18px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -266,20 +250,12 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
     margin-left: 0;
   }
 
-  #waveCanvas {
-    position: absolute;
-  top: 680px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 55px;
-    pointer-events: none;
-  }
   .reopen-message {
     font-size: 13px;
     z-index: 1;
   }
 }
+
 
 
 
