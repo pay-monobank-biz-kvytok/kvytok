@@ -75,7 +75,7 @@ body {
   height: 60px;
   border-radius: 50%;
   position: absolute;
-  top: -10px;
+  top: -46px;
   left: calc(50% - 30px);
   background-color: white;
   z-index: 999;
@@ -280,6 +280,7 @@ box-shadow: 0 0 15px 10px rgba(238, 238, 238);
     z-index: 1;
   }
 }
+
 
 
 
